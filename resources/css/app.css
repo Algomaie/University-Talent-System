@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "liga" 1, "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "liga" 1, "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Ensure all elements inherit the base font */
+  * {
+    font-family: inherit;
+  }
+}
+
+/* Unified color palette for the entire website */
+:root {
+  --primary-50: #f0f0ff;
+  --primary-100: #e0e0ff;
+  --primary-200: #c1c1ff;
+  --primary-300: #9898fa;
+  --primary-400: #6666fc;
+  --primary-500: #5D5CDE;
+  --primary-600: #4A49C4;
+  --primary-700: #3736AA;
+  --primary-800: #242390;
+  --primary-900: #111076;
+  
+  --secondary-50: #f0f9ff;
+  --secondary-100: #e0f2fe;
+  --secondary-200: #bae6fd;
+  --secondary-300: #7dd3fc;
+  --secondary-400: #38bdf8;
+  --secondary-500: #0ea5e9;
+  --secondary-600: #0284c7;
+  --secondary-700: #0369a1;
+  --secondary-800: #075985;
+  --secondary-900: #0c4a6e;
+  
+  --success-50: #f0fdf4;
+  --success-100: #dcfce7;
+  --success-200: #bbf7d0;
+  --success-300: #86efac;
+  --success-400: #4ade80;
+  --success-500: #22c55e;
+  --success-600: #16a34a;
+  --success-700: #15803d;
+  --success-800: #166534;
+  --success-900: #14532d;
+  
+  --warning-50: #fff7ed;
+  --warning-100: #ffedd5;
+  --warning-200: #fed7aa;
+  --warning-300: #fdba74;
+  --warning-400: #fb923c;
+  --warning-500: #f97316;
+  --warning-600: #ea580c;
+  --warning-700: #c2410c;
+  --warning-800: #9a3412;
+  --warning-900: #7c2d12;
+  
+  --danger-50: #fef2f2;
+  --danger-100: #fee2e2;
+  --danger-200: #fecaca;
+  --danger-300: #fca5a5;
+  --danger-400: #f87171;
+  --danger-500: #ef4444;
+  --danger-600: #dc2626;
+  --danger-700: #b91c1c;
+  --danger-800: #991b1b;
+  --danger-900: #7f1d1d;
+  
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+}
+
+/* ✅ Unified text colors for the entire website */
+body {
+  color: #000000; /* Black text for light mode */
+}
+
+.dark body {
+  color: #ffffff; /* White text for dark mode */
+}
+.dark nav, .dark nav * {
+  color: #ffffff !important;
+}
+
+nav, nav * {
+  color: #ffffff !important;
+}
+.ring-black a,i {
+    color: #000000 !important;
+}
+.ring-black i {
+    color: #000000 !important;
+}
+.ring-black a:hover{
+    color: #069a17 !important;
+}
+/* Optional: make links stay white even on hover */
+nav a:hover {
+  color: #e5e5e5 !important; /* slight gray tint on hover */
+}
+/* Ensure consistent link colors using the primary palette */
+a {
+  color: var(--primary-500);
+}
+
+a:hover {
+  color: var(--primary-600);
+}
+
+.dark a {
+  color: var(--primary-900);
+}
+
+.dark a:hover {
+  color: var(--secondary-900);
+}
+
+/* === Input fields, labels, placeholders === */
+input, select, textarea {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #d1d5db; /* gray-300 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #000000; /* gray-500 */
+}
+
+.dark input, .dark select, .dark textarea {
+  color: #000000;
+  /* background-color: #374151; gray-700 */
+  border-color: #4b5563;
+}
+p {
+    color: #3b82f6;
+}
+strong{
+    color: #000;
+}
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #000000; /* gray-400 */
+}
+.txt{
+    color: #ffffff !important;
+}
+footer a{
+    color: #ffffff !important;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Fix Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+        <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">Font Display Test</h1>
+        
+        <div class="space-y-6">
+            <div>
+                <h2 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-3">Font Weight Variations</h2>
+                <p class="text-lg font-thin text-gray-600 dark:text-gray-300">This is thin text (300 weight)</p>
+                <p class="text-lg font-normal text-gray-600 dark:text-gray-300">This is normal text (400 weight)</p>
+                <p class="text-lg font-medium text-gray-600 dark:text-gray-300">This is medium text (500 weight)</p>
+                <p class="text-lg font-semibold text-gray-600 dark:text-gray-300">This is semi-bold text (600 weight)</p>
+                <p class="text-lg font-bold text-gray-600 dark:text-gray-300">This is bold text (700 weight)</p>
+            </div>
+            
+            <div>
+                <h2 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-3">Different Text Sizes</h2>
+                <p class="text-xs text-gray-600 dark:text-gray-300">Extra small text</p>
+                <p class="text-sm text-gray-600 dark:text-gray-300">Small text</p>
+                <p class="text-base text-gray-600 dark:text-gray-300">Base text</p>
+                <p class="text-lg text-gray-600 dark:text-gray-300">Large text</p>
+                <p class="text-xl text-gray-600 dark:text-gray-300">Extra large text</p>
+                <p class="text-2xl text-gray-600 dark:text-gray-300">2X large text</p>
+            </div>
+            
+            <div>
+                <h2 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-3">Dark Mode Test</h2>
+                <p class="text-lg text-gray-800 dark:text-gray-200">This text should be visible in both light and dark modes</p>
+            </div>
+        </div>
+        
+        <div class="mt-8 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+            <h3 class="text-xl font-semibold text-blue-800 dark:text-blue-200 mb-2">Instructions</h3>
+            <p class="text-blue-700 dark:text-blue-300">
+                If you can see all the text above clearly with proper font weights and it's visible in both light and dark modes, 
+                then the font issues have been resolved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
